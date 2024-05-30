@@ -13,5 +13,7 @@ public record Content(
     LocalDateTime dateUpdated,
     String url
 ) {
-   
+    // Record body (if needed)
 }
+
+
