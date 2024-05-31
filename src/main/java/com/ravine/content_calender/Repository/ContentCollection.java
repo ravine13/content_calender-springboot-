@@ -46,5 +46,7 @@ public class ContentCollection {
 
         contentList.add(content);
     }
-    
+    public boolean existsById(Integer id){
+        return contentList.stream().filter(c -> c.id().equals(id)).count() == 1;
+    }
 }
